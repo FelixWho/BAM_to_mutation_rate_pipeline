@@ -1,0 +1,3 @@
+MutationGenerator.py utilizes pyVCF to generate random mutations when given a VCF file.
+
+MutationGeneratorTrivial.py does the same as MutationGenerator.py but without using the pyVCF class.

@@ -1,6 +1,9 @@
 #!/bin/bash
 echo "take bam, vcf, roi files . . . output mutation rate"
 
+# USAGE: -b specifies BAM files -d specifies the minimum coverage to be included in BED file -D specifies minimum proportion of BED files in read to add to adequate coverage BED file
+# -f specifies what to filter VCF file by i.e. "SNP" or "INDEL" -v specifies VCF file -r specifies Region Of Interest file
+
 num_beds=0
 delta_bam_to_bed=15
 delta_bed_to_adequate_covered_regions=0.75

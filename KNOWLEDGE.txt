@@ -1,0 +1,158 @@
+SAMPLE MAF FILE: MC3 from Synapse
+
+Hugo_Symbol	Entrez_Gene_Id	Center	NCBI_Build	Chromosome	Start_Position	End_Position	Strand	Variant_Classification	Variant_Type	Reference_Allele	Tumor_Seq_Allele1	Tumor_Seq_Allele2	dbSNP_RS	dbSNP_Val_Status	Tumor_Sample_Barcode	Matched_Norm_Sample_Barcode	Match_Norm_Seq_Allele1	Match_Norm_Seq_Allele2	Tumor_Validation_Allele1	Tumor_Validation_Allele2	Match_Norm_Validation_Allele1	Match_Norm_Validation_Allele2	Verification_Status	Validation_Status	Mutation_Status	Sequencing_Phase	Sequence_Source	Validation_Method	Score	BAM_File	Sequencer	Tumor_Sample_UUID	Matched_Norm_Sample_UUID	HGVSc	HGVSp	HGVSp_Short	Transcript_ID	Exon_Number	t_depth	t_ref_count	t_alt_count	n_depth	n_ref_count	n_alt_count	all_effects	Allele	Gene	Feature	Feature_type	Consequence	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	ALLELE_NUM	DISTANCE	STRAND	SYMBOL	SYMBOL_SOURCE	HGNC_ID	BIOTYPE	CANONICAL	CCDS	ENSP	SWISSPROT	TREMBL	UNIPARC	RefSeq	SIFT	PolyPhen	EXON	INTRON	DOMAINS	GMAF	AFR_MAF	AMR_MAF	ASN_MAF	EAS_MAF	EUR_MAF	SAS_MAF	AA_MAF	EA_MAF	CLIN_SIG	SOMATIC	PUBMED	MOTIF_NAME	MOTIF_POS	HIGH_INF_POS	MOTIF_SCORE_CHANGE	IMPACT	PICK	VARIANT_CLASS	TSL	HGVS_OFFSET	PHENO	MINIMISED	ExAC_AF	ExAC_AF_AFR	ExAC_AF_AMR	ExAC_AF_EAS	ExAC_AF_FIN	ExAC_AF_NFE	ExAC_AF_OTH	ExAC_AF_SAS	GENE_PHENO	FILTER	COSMIC	CENTERS	CONTEXT	DBVS	NCALLERS
+TACC2	0	.	GRCh37	10	123810032	123810032	+	Missense_Mutation	SNP	C	C	T	rs540521848	.	TCGA-02-0003-01A-01D-1490-08	TCGA-02-0003-10A-01D-1490-08	C	C	c.113C>T	p.Thr38Met	p.T38M	ENST00000369005	3/23	43	4	38	74	74	0	TACC2,missense_variant,p.Thr38Met,ENST00000358010,;TACC2,missense_variant,p.Thr38Met,ENST00000453444,;TACC2,missense_variant,p.Thr38Met,ENST00000513429,;TACC2,missense_variant,p.Thr55Met,ENST00000491540,;TACC2,missense_variant,p.Thr38Met,ENST00000369005,;TACC2,missense_variant,p.Thr38Met,ENST00000334433,;TACC2,missense_variant,p.Thr38Met,ENST00000515603,;TACC2,missense_variant,p.Thr38Met,ENST00000515273,;TACC2,non_coding_transcript_exon_variant,,ENST00000498721,;TACC2,non_coding_transcript_exon_variant,,ENST00000492689,;	T	ENSG00000138162	ENST00000369005	Transcript	missense_variant	453	113	38	T/M	aCg/aTg	rs540521848,COSM465374,COSM2148937	.	TACC2	HGNC	11523	protein_coding	YES	CCDS7626.1	ENSP00000358001TACC2_HUMAN	.	UPI0000246F6B	.	.	benign(0.335)	3/23	T:0.0002	T:0	T:0.0014	.	T:0	T:0	T:0	.	.	0,1,1	.	.	.	.	.	MODERATE	.	SNV	0,1,1	.	.	.	.	.	.	.	.	.	PASS	SITE|p.T38M|c.113C>T|3	MUTECT|RADIA|SOMATICSNIPER|MUSE|VARSCANS	GGACACGCCCG	by1000G	5
+JAKMIP3	0	.	GRCh37	10	133967449	133967449	+	Silent	SNP	C	C	T	rs763531628	.	TCGA-02-0003-01A-01D-1490-08	TCGA-02-0003-10A-01D-1490-08	C	C	.	.	c.2169C>T	p.%3D	p.D723D	ENST00000298622	18/24	82	16	65	123	123	0	JAKMIP3,synonymous_variant,p.%3D,ENST00000298622,;JAKMIP3,non_coding_transcript_exon_variant,,ENST00000477275,;	T	ENSG00000188385ENST00000298622	Transcript	synonymous_variant	2307	2169	723	gaC/gaT	rs763531628,COSM2148890	.	.	1	JAKMIP3	HGNC	23523	protein_coding	YES	CCDS44494.1	ENSP00000298622	JKIP3_HUMAN	.	UPI000157482F	.	.	.	18/24	.	hmmpanther:PTHR18935:SF5,hmmpanther:PTHR18935	.	.	.	.	.	.	.	0,1	.	.	.	.	.	LOW	.	SNV	.	0,1	.	.	.	.	.	.	.	.	.	PASS	NONE	MUTECT|RADIA|SOMATICSNIPER|MUSE|VARSCANS	CTGGACGAGGA	byFrequency	5
+PANX3	0	.	GRCh37	11	124489539	124489539	+	Missense_Mutation	SNP	G	G	A	.	.	TCGA-02-0003-01A-01D-1490-08	TCGA-02-0003-10A-01D-1490-08	G	G	.	c.887G>A	p.Arg296Gln	p.R296Q	ENST00000284288	4/4	217	127	89	188	188	0	PANX3,missense_variant,p.Arg296Gln,ENST00000284288,;TBRG1,upstream_gene_variant,,ENST00000531667,;TBRG1,upstream_gene_variant,,ENST00000375005,;TBRG1,upstream_gene_variant,,ENST00000441174,;TBRG1,upstream_gene_variant,,ENST00000529543,;TBRG1,upstream_gene_variant,,ENST00000284290,;TBRG1,upstream_gene_variant,,ENST00000452080,;TBRG1,upstream_gene_variant,,ENST00000530731,;TBRG1,upstream_gene_variant,,ENST00000473629,;	A	ENSG00000154143	ENST00000284288	Transcript	missense_variant	954	887	296	R/Q	cGg/cAg	COSM211013	.	.	1	PANX3	HGNC	20573	protein_coding	YES	CCDS8447.1	ENSP00000284288	PANX3_HUMAN	.	UPI0000131264	.	tolerated(0.37)	benign(0.001)	4/4	.	hmmpanther:PTHR15759,hmmpanther:PTHR15759:SF3,PROSITE_profiles:PS51013	.	.	.	MODERATE	.	SNV	.	.	1	.	.	.	.	PASS	SITE|p.R296Q|c.887G>A|3	MUTECT|RADIA|SOMATICSNIPER|MUSE|VARSCANS	ATGTCGGTGGG	.	5
+SPI1	0	.	GRCh37	11	47380512	47380512	+	Missense_Mutation	SNP	G	G	T	novel	.	TCGA-02-0003-01A-01D-1490-08	TCGA-02-0003-10A-01D-1490-08	G	G	.	c.379C>A	p.Pro127Thr	p.P127T	ENST00000227163	4/5	12	6	6	15	15	0	SPI1,missense_variant,p.Pro126Thr,ENST00000378538,;SPI1,missense_variant,p.Pro127Thr,ENST00000227163,;SPI1,missense_variant,p.Pro126Thr,ENST00000533968,;SPI1,intron_variant,,ENST00000533030,;	T	ENSG00000066336ENST00000227163	Transcript	missense_variant	417	379	127	P/T	Cca/Aca	.	.	.	-1	SPI1	HGNC	11241	protein_coding	YES	CCDS44591.1	ENSP00000227163	SPI1_HUMAN	.	UPI0000D4ECF1	.	tolerated(0.08)	benign(0.093)	4/5	.	hmmpanther:PTHR11849:SF16,hmmpanther:PTHR11849	.	.	.	.	.	.	MODERATE	.	SNV	.	.	.	.	.	.	.	PASS	NONE	RADIA|MUSE	GGCTGGGGACA	.	2
+NAALAD2	0	.	GRCh37	11	89868837	89868837	+	Missense_Mutation	SNP	C	C	T	.	.	TCGA-02-0003-01A-01D-1490-08	TCGA-02-0003-10A-01D-1490-08	C	C	.	c.193C>T	p.Arg65Cys	p.R65C	ENST00000534061	2/19	70	34	36	81	81	0	NAALAD2,missense_variant,p.Arg11Cys,ENST00000526637,;NAALAD2,missense_variant,p.Arg65Cys,ENST00000375944,;NAALAD2,missense_variant,p.Arg65Cys,ENST00000525171,;NAALAD2,missense_variant,p.Arg65Cys,ENST00000534061,;NAALAD2,missense_variant,p.Arg65Cys,ENST00000525497,;NAALAD2,missense_variant,p.Arg65Cys,ENST00000321955,;NAALAD2,missense_variant,p.Arg65Cys,ENST00000527493,;NAALAD2,splice_region_variant,,ENST00000524501,;NAALAD2,splice_region_variant,,ENST00000529090,;	T	ENSG00000077616	ENST00000534061	Transcript	missense_variant	423	193	65	R/C	Cgt/Tgt	COSM932955	.	NAALAD2	HGNC	14526	protein_coding	YES	CCDS8288.1	ENSP00000432481NALD2_HUMAN	E9PJ53_HUMAN,E9PII2_HUMAN	UPI0000031A85	.	deleterious(0.01)	benign(0.034)	2/19	.	Superfamily_domains:SSF53187,Gene3D:3.40.630.10,hmmpanther:PTHR10404:SF38,hmmpanther:PTHR10404	.	.	MODERATE	.	SNV	.	.	1	.	.	.	.	PASS	SITE|p.R65C|c.193C>T|4	MUTECT|RADIA|SOMATICSNIPER|MUSE|VARSCANS	TTCTTCGGTAA	.	5
+FAT3	0	.	GRCh37	11	92570936	92570936	+	Silent	SNP	G	G	A	rs374103134	.	TCGA-02-0003-01A-01D-1490-08	TCGA-02-0003-10A-01D-1490-08	G	G	.	.	c.10332G>A	p.%3D	p.P3444P	ENST00000298047	16/27	105	62	42	112	112	0	FAT3,synonymous_variant,p.%3D,ENST00000298047,;FAT3,synonymous_variant,p.%3D,ENST00000409404,;FAT3,synonymous_variant,p.%3D,ENST00000525166,;	A	ENSG00000165323	ENST00000298047	Transcript	synonymous_variant	10349	10332	3444	P	ccG/ccA	rs374103134,COSM2148917,COSM2148916,COSM2148915	.	.	1	FAT3	HGNC	23112	protein_coding	YES	.	ENSP00000298047	FAT3_HUMAN	E9PQ73_HUMAN	UPI000050B6C6	.	.	.	16/27	.	Superfamily_domains:SSF49313,Superfamily_domains:SSF49313,SMART_domains:SM00112,Gene3D:2.60.40.60,PROSITE_patterns:PS00232,hmmpanther:PTHR24026,hmmpanther:PTHR24026:SF33,PROSITE_profiles:PS50268	.	.	.	.	.	.	.	A:0	A:0.0000,1,1,1	.	.	.	.	.	LOW	.	SNV	.	0,1,1,1	.	.	.	.	.	.	.	.	.	PASS	NONE	SOMATICSNIPER|RADIA|MUTECT|MUSE|VARSCANS	AGCCCGGTGTT	byFrequency|byCluster	5
+MTERFD3	0	.	GRCh37	12	107371855	107371855	+	Missense_Mutation	SNP	A	A	G	.	.	TCGA-02-0003-01A-01D-1490-08	TCGA-02-0003-10A-01D-1490-08	A	A	.	c.638T>C	p.Leu213Ser	p.L213S	ENST00000552029	2/2	128	75	53	138	138	0	MTERFD3,missense_variant,p.Leu213Ser,ENST00000240050,;MTERFD3,missense_variant,p.Leu213Ser,ENST00000392830,;MTERFD3,missense_variant,p.Leu213Ser,ENST00000552029,;MTERFD3,downstream_gene_variant,,ENST00000550496,;C12orf23,downstream_gene_variant,,ENST00000548125,;C12orf23,downstream_gene_variant,,ENST00000280756,;MTERFD3,downstream_gene_variant,,ENST00000548101,;MTERFD3,downstream_gene_variant,,ENST00000550736,;C12orf23,intron_variant,,ENST00000551237,;C12orf23,intron_variant,,ENST00000548806,;	G	ENSG00000120832	ENST00000552029	Transcript	missense_variant	2707	638	213	L/S	tTa/tCa	COSM2148901	.	.	-1	MTERFD3	HGNC	30779	protein_coding	YES	CCDS9111.1	ENSP00000447651	MTER3_HUMAN	F8VXH5_HUMAN,F8VSL4_HUMAN,F8VSD8_HUMAN	UPI000006E7A4	.	deleterious(0)	probably_damaging(1)	2/2	.	hmmpanther:PTHR15437:SF1,hmmpanther:PTHR15437,Pfam_domain:PF02536,SMART_domains:SM00733	.	.	.	.	.	.	MODERATE	.	SNV	.	.	1	.	.	.	.	PASS	NONE	MUTECT|RADIA|SOMATICSNIPER|MUSE|VARSCANS	GGCTTAACAAT	5
+BTBD11	0	.	GRCh37	12	108012011	108012011	+	Missense_Mutation	SNP	G	G	A	.	.	TCGA-02-0003-01A-01D-1490-08	TCGA-02-0003-10A-01D-1490-08	G	G	.	c.2308G>A	p.Glu770Lys	p.E770K	ENST00000280758	10/17	95	61	34	92	92	0	BTBD11,missense_variant,p.Glu770Lys,ENST00000490090,;BTBD11,missense_variant,p.Glu770Lys,ENST00000280758,;BTBD11,missense_variant,p.Glu307Lys,ENST00000357167,;BTBD11,intron_variant,,ENST00000420571,;RP11-128P10.1,upstream_gene_variant,,ENST00000548473,;	A	ENSG00000151136	ENST00000280758	Transcript	missense_variant	2836	2308	770	E/K	Gag/Aag	COSM2148894	.	.	1	BTBD11	HGNC	23844	protein_coding	YES	CCDS31893.1	ENSP00000280758	BTBDB_HUMAN	B3KY13_HUMAN,B3KXB0_HUMAN	UPI000051901E	.	deleterious(0)	probably_damaging(0.99410/17	.	hmmpanther:PTHR24413:SF76,hmmpanther:PTHR24413	.	.	MODERATE	.	SNV	.	.	1	.	.	.	.	PASS	NONE	MUTECT|RADIA|SOMATICSNIPER|MUSE|VARSCANS	TGGCCGAGGGG	5
+NOS1	0	.	GRCh37	12	117768962	117768962	+	5'Flank	SNP	C	C	A	novel	.	TCGA-02-0003-01A-01D-1490-08	TCGA-02-0003-10A-01D-1490-08	C	C	.	.	.	ENST00000338101	.	83	44	39	78	78	0	NOS1,5_prime_UTR_variant,,ENST00000344089,;NOS1,5_prime_UTR_variant,,ENST00000317775,;NOS1,upstream_gene_variant,,ENST00000338101,;NOS1,downstream_gene_variant,,ENST00000549189,;	A	ENSG00000089250	ENST00000338101	Transcript	upstream_gene_variant	.	.	.	.	.	.	.	83	-1	NOS1	HGNC	7872	protein_coding	YES	CCDS55890.1	ENSP00000337459	NOS1_HUMAN	A0PJJ7_HUMAN	UPI00001FBC10	.	.	.	MODIFIER	.	SNV	.	.	.	.	.	.	.	PASS	NONE	MUTECT|SOMATICSNIPER|MUSE|VARSCANS	TCAGGCTACAC	.	4
+
+MuSiC1 MAF parser:
+
+my ( undef, $refstats_file )  = tempfile();
+    `joinx ref-stats --ref-bases --bed $maf_bed --fasta $this->{_REF_SEQ} --output $refstats_file`;
+    #
+    #
+    # Parse through the ref-stats output and load it 
+    # into hashes for quick lookup later
+    #
+    my ( %ref_base, %cpg_site );
+    my $refStatsFh = IO::File->new( $refstats_file ) or die "Couldn't open $refstats_file. $!";
+    while( my $line = $refStatsFh->getline ) {
+        next if ( $line =~ m/^#/ );
+        chomp $line;
+        my ( $chr, undef, $pos, undef, undef, undef, $ref ) = split( /\t/, $line );
+        my $locus = "$chr\t" . ( $pos - 1 );
+        $ref_base{$locus} = substr( $ref, 1, 1 );
+        $cpg_site{$locus} = 1 if ( $ref =~ m/CG/i );
+    }
+    $refStatsFh->close;
+    #
+    # Create a hash to help classify SNVs
+    #
+    my %classify;
+    $classify{$_} = AT_Transitions foreach( qw( AG TC ));
+    $classify{$_} = AT_Transversions foreach( qw( AC AT TA TG ));
+    $classify{$_} = CG_Transitions foreach( qw( CT GA ));
+    $classify{$_} = CG_Transversions foreach( qw( CA CG GC GT ));
+    #
+    # Parse through the MAF file and categorize 
+    # each somatic mutation
+    #
+    print STDERR "Parsing MAF file to classify mutations\n";
+    my %skip_cnts;
+    $mafFh = IO::File->new( $this->{_MAF_FILE} ) or die "Couldn't open $this->{_MAF_FILE}. $!";
+    while ( my $line = $mafFh->getline ) {
+        next if ( $line =~ m/^(#|Hugo_Symbol)/ );
+        chomp $line;
+        my @cols = split( /\t/, $line );
+        my ( $gene, $chr, $start, $stop, $mutation_class, $mutation_type, $ref, $var1, $var2, $sample ) = @cols[0,4..6,8..12,15];
+        # Skip mutations in samples that are not in the provided bam list
+        unless( defined $sample_idx{$sample} ) {
+            $skip_cnts{"belong to unrecognized samples"}++;
+            print STDERR "Skipping unrecognized sample ($sample not in BAM list): $gene, $chr:$start-$stop\n" if ( $this->{_SHOW_SKIPPED} );
+            next;
+        }
+        # If the mutation classification is odd, quit with error
+        if ( $mutation_class !~ m/^(Missense_Mutation|Nonsense_Mutation|Nonstop_Mutation|Splice_Site|Translation_Start_Site|Frame_Shift_Del|Frame_Shift_Ins|In_Frame_Del|In_Frame_Ins|Silent|Intron|RNA|3'Flank|3'UTR|5'Flank|5'UTR|IGR|Targeted_Region|De_novo_Start_InFrame|De_novo_Start_OutOfFrame)$/ ) {
+            print STDERR "Unrecognized Variant_Classification \"$mutation_class\" in MAF file: $gene, $chr:$start-$stop\n";
+            print STDERR "Please use TCGA MAF Specification v2.3.\n";
+            return undef;
+        }
+        #
+        # If user wants, skip Silent mutations, or those in Introns, RNA, UTRs, Flanks, IGRs, or the ubiquitous Targeted_Region
+        if (( $this->{_SKIP_NON_CODING} && $mutation_class =~ m/^(Intron|RNA|3'Flank|3'UTR|5'Flank|5'UTR|IGR|Targeted_Region)$/ ) ||
+          ( $this->{_SKIP_SILENT} && $mutation_class =~ m/^Silent$/ )) {
+            $skip_cnts{"are classified as $mutation_class"}++;
+            print STDERR "Skipping $mutation_class mutation: $gene, $chr:$start-$stop\n" if ( $this->{_SHOW_SKIPPED} );
+            next;
+        }
+        #
+        # If the mutation type is odd, quit with error
+        if ( $mutation_type !~ m/^(SNP|DNP|TNP|ONP|INS|DEL|Consolidated)$/ ) {
+            print STDERR "Unrecognized Variant_Type \"$mutation_type\" in MAF file: $gene, $chr:$start-$stop\n";
+            print STDERR "Please use TCGA MAF Specification v2.3.\n";
+            return undef;
+        }
+        #
+        # Skip mutations that were consolidated into others (E.g. SNP consolidated into a TNP)
+        if ( $mutation_type =~ m/^Consolidated$/ ) {
+            $skip_cnts{"are consolidated into another"}++;
+            print STDERR "Skipping consolidated mutation: $gene, $chr:$start-$stop\n" if ( $this->{_SHOW_SKIPPED} );
+            next;
+        }
+        #
+        # Skip mutations that fall completely outside any of the provided regions of interest
+        if ( $this->count_bits( $roi_bitmask->{$chr}, $start, $stop ) == 0 ) {
+            $skip_cnts{"are outside any ROIs"}++;
+            print STDERR "Skipping mutation that falls outside ROIs: $gene, $chr:$start-$stop\n" if ( $this->{_SHOW_SKIPPED} );
+            next;
+        }
+        #
+        # Skip mutations whose gene names don't match any of those in the ROI list
+        unless( defined $gene_idx{$gene} ) {
+            $skip_cnts{"have unrecognized gene names"}++;
+            print STDERR "Skipping unrecognized gene name (not in ROI file): $gene, $chr:$start-$stop\n" if ( $this->{_SHOW_SKIPPED} );
+            next;
+        }
+        #
+        my $class = '';
+        # Check if the mutation is the truncating type, if the user wanted a separate category of those
+        if ( $this->{_SEPERATE_TRUNCATIONS} && $mutation_class =~ m/^(Nonsense_Mutation|Splice_Site|Frame_Shift_Del|Frame_Shift_Ins)/ ) {
+            $class = Truncations;
+        }
+        # Classify the mutation as AT/CG/CpG Transition, AT/CG/CpG Transversion
+        elsif ( $mutation_type =~ m/^(SNP|DNP|ONP|TNP)$/ ) {
+            # ::TBD:: For DNPs and TNPs, we use only the first base for mutation classification
+            $ref = substr( $ref, 0, 1 );
+            $var1 = substr( $var1, 0, 1 );
+            $var2 = substr( $var2, 0, 1 );
+            #
+            # If the alleles are anything but A, C, G, or T then quit with error
+            if ( $ref !~ m/[ACGT]/ || $var1 !~ m/[ACGT]/ || $var2 !~ m/[ACGT]/ ) {
+                print STDERR "Unrecognized allele in column Reference_Allele, Tumor_Seq_Allele1, or Tumor_Seq_Allele2: $gene, $chr:$start-$stop\n";
+                print STDERR "Please use TCGA MAF Specification v2.3.\n";
+                return undef;
+            }
+            #
+            # Use the classify hash to find whether this SNV is an AT/CG Transition/Transversion
+            #
+            $class = $classify{ "$ref$var1" } if( defined $classify{ "$ref$var1" } );
+            $class = $classify{ "$ref$var2" } if( defined $classify{ "$ref$var2" } );
+            #
+            # Check if the ref base in the MAF matched what we fetched from the ref-seq
+            #
+            my $locus = "$chr\t$start";
+            if ( defined $ref_base{$locus} && $ref_base{$locus} ne $ref ) {
+                print STDERR "Reference allele $ref for $gene variant at $chr:$start-$stop is " . $ref_base{$locus} . " in the FASTA. Using it anyway.\n";
+            }
+            #
+            # Check if a C or G reference allele belongs to a CpG pair in the refseq
+            #
+            if (( $ref eq 'C' || $ref eq 'G' ) && defined $cpg_site{$locus} ) {
+                $class = (( $class == CG_Transitions ) ? CpG_Transitions : CpG_Transversions );
+            }
+        }
+        # Classify it as an indel (excludes splice-site and frame-shift if user wanted truncations separately)
+        #
+        elsif ( $mutation_type =~ m/^(INS|DEL)$/ ) {
+            $class = Indels;
+        }
+        # The user's gene exclusion list affects only 
+        # the overall BMR calculations
+        $sample_mr[$sample_idx{$sample}][$class][mutations]++ unless( defined $ignored_genes{$gene} );
+        $gene_mr{$sample_idx{$sample}}{$gene_idx{$gene}}[$class][mutations]++;
+    }
+    #
+    $mafFh->close;
+    #
+    # Display statistics related to parsing the MAF
+    #
+    print STDERR "Finished Parsing the MAF file to classify mutations\n";
+    foreach my $skip_type ( sort {$skip_cnts{$b} <=> $skip_cnts{$a}} keys %skip_cnts ) {
+        print STDERR "Skipped " . $skip_cnts{$skip_type} . " mutation(s) that $skip_type\n" if( defined $skip_cnts{$skip_type} );
+    }

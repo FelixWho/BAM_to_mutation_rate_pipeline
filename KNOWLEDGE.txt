@@ -13,8 +13,29 @@ NOS1	0	.	GRCh37	12	117768962	117768962	+	5'Flank	SNP	C	C	A	novel	.	TCGA-02-0003-
 
 MuSiC1 MAF parser:
 
-my ( undef, $refstats_file )  = tempfile();
-    `joinx ref-stats --ref-bases --bed $maf_bed --fasta $this->{_REF_SEQ} --output $refstats_file`;
+print STDERR "Running 'joinx ref-stats' to read reference FASTA and identify SNVs at AT, CG, CpG sites\n";
+    #
+    #my $maf_bed = "$this->{_OUTPUT_DIR}/.temp_maf_bed_file";
+    my ( undef, $maf_bed ) = tempfile();
+    my $mafBedFh = IO::File->new( $maf_bed, ">" ) or die "Temporary file could not be created. $!"; CREATE TEMPORARY MAF FILE
+    my $mafFh = IO::File->new( $this->{_MAF_FILE} ) or die "Couldn't open $this->{_MAF_FILE}. $!";  READ IN _MAF_FILE
+    while( my $line = $mafFh->getline ) {                                                           GETLINES FROM _MAF_FILE
+        next if ( $line =~ m/^(#|Hugo_Symbol)/ );                                                   SKIP LINE IF STARTS WITH HUGO SYMBOL
+        chomp $line;                                                                                RID OF NEWLINE CHARACTER
+        my @cols = split( /\t/, $line );                                                            SPLIT EACH READ LINE
+        my ( $chr, $start, $stop, $mutation_type, $ref, $var1, $var2 ) = @cols[4..6,9..12];         KEEP COLUMNS OF INTEREST
+        if ( $mutation_type =~ m/^(SNP|DNP|ONP|TNP)$/ ) {                                           IF MUTATION IS CONGLOMERATE TYPE
+            $mafBedFh->print( "$chr\t" . ( $start - 2 ) . "\t" . ( $start + 1 ) . "\n" );           PRINT IT AT THE START OF THE MAF_BED FILE
+        }
+    }
+    $mafFh->close;
+    $mafBedFh->close;
+    #
+    #my $refstats_file = "$this->{_OUTPUT_DIR}/.temp_refstats_file";                               
+    #
+
+my ( undef, $refstats_file )  = tempfile();                                                         INITIALIZE TEMPORARY REFSTATS FILE
+    `joinx ref-stats --ref-bases --bed $maf_bed --fasta $this->{_REF_SEQ} --output $refstats_file`; CALL JOINX. PARAM: REQUIRES BED  AND FASTA (REFERENCE SEQUENCE) FILE
     #
     #
     # Parse through the ref-stats output and load it 
